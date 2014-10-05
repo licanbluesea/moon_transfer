@@ -1,1 +1,211 @@
 @import "./common.less";
+.sprite{
+  background: url("@{img_url}sprite.jpg") no-repeat;
+}
+body{
+  background: #0C0C16 url("@{img_url}bg.jpg") center 62px no-repeat;
+}
+#content{
+  margin-bottom: 100px;
+  background: url("@{img_url}c_bg.jpg") center 62px no-repeat;
+}
+.top{
+  position: relative;
+  height: 455px;
+  ul{
+    .fr;
+    margin-right:25px;
+  }
+  li{
+    .fl;
+    height: 35px;
+    font-size: 14px;
+    line-height: 35px;
+    margin: 0 15px;
+    a{
+      color: #fff;
+    }
+  }
+}
+.logo{
+  position: absolute;
+  left:0px;
+  top:25px;
+  display: block;
+  width: 180px;
+  height: 120px;
+}
+.con{
+  padding: 0 20px;
+  overflow: hidden;
+  .left_bar{
+    .fl;
+    margin-right: 10px;
+    width:745px;
+  }
+  .right_bar{
+    .fl;
+    width:195px;
+    padding: 0 5px;
+    .down_load{
+      display: block;
+      margin-top: 10px;
+      width: 195px;
+      height: 70px;
+    }
+    div{
+      margin-top: 10px;
+    }
+    img{
+      display: block;
+    }
+  }
+}
+.step_title{
+  .sprite;
+  height: 83px;
+  background-position: 0 0 ;
+}
+.step_box{
+  background: url("@{img_url}con_bg.jpg") no-repeat;
+  color: #B5CCD6;
+  h1{
+    font-size: 18px;
+    color:#E7C4FD;
+    margin: 10px 0;
+  }
+  .step_input{
+    padding: 30px;
+  }
+  a{
+    color: #C6A08A;
+  }
+  .notice_box{
+    padding:25px 40px;
+    background: #E3EBF3;
+    color: #000;
+    h3{
+      margin: 10px 0;
+      font-size: 14px;
+      color: #A52310;
+    }
+    p,ul{
+      margin-top: 5px;
+    }
+    li{
+      text-indent: 2em;
+    }
+    .text_start{
+      text-indent: 2em;
+    }
+  }
+  p{
+    &.desc{
+      margin-top: 10px;
+      color: #9AA9E5;
+      em{
+        color: #FD8C76;
+      }
+    }
+  }
+}
+.user_box{
+  width:679px;
+  height: 160px;
+  margin: 10px 0;
+  background: url("@{img_url}user.jpg") no-repeat;
+}
+.login_box{
+  .fl;
+  margin-top: 20px;
+  margin-left:20px;
+  width:365px;
+  ul{
+    margin-top: 30px;
+    overflow: hidden;
+  }
+
+  li{
+    .fl;
+    .sprite;
+    width:171px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 10px;
+    &.reg{
+      background-position: 0 -168px;
+    }
+    &.log{
+      background-position: -171px -168px;
+    }
+  }
+}
+.thrid_box:extend(.login_box){
+  width:240px;
+  a{
+    .sprite;
+    margin-top: 30px;
+    display: block;
+    width:171px;
+    height: 60px;
+    background-position:  -342px -168px;
+  }
+}
+.user_table{
+  margin-top: 10px;
+  a{
+    color:#B5CCD6;
+  }
+  td{
+    padding:5px;
+  }
+  select{
+    width:82%;
+    &.game_account{
+      display: block;
+      width:210px;
+      padding: 0 10px;
+      margin: 0 auto;
+    }
+  }
+  .name{
+    width: 100px;
+    text-align: right;
+  }
+  img{
+   .fr;
+  }
+  .text{
+    background:#E3EBF3;
+    border: none;
+    height: 25px;
+    padding-left: 10px;
+  }
+  button{
+    .sprite;
+    .fl;
+    display: inline-block;
+    width:71px;
+    height: 26px;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    &.reg_btn{
+      background-position: 0 -228px;
+    }
+    &.log_btn{
+      background-position: -71px -228px;
+    }
+    &.esc_btn{
+      background-position: -142px -228px;
+    }
+    &.create_btn{
+      width:114px ;
+      background-position:-279px -228px ;
+    }
+    &.sure_btn{
+      width: 66px;
+      background-position: -213px -228px;
+    }
+  }
+}
