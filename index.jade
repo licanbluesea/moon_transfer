@@ -197,6 +197,35 @@ html
                             .step_d
                                 h1 恭喜，閣下此遊戲帳號最後登入的世家及相關角色已經匯入到 此xoyobox帳號內。
                                 p 此帳號的世家資料如下：
+                                table.show_gameaccount(border="1",width="100%",align="center",cellspacing="0",cellpadding="0")
+                                    tr
+                                        th 世家名稱
+                                        th 轉移狀態
+                                    tr
+                                        td 一級棒
+                                        td.no 未轉移
+                                    tr
+                                        td 一級棒
+                                        td.ed 已轉移
+                                p - 尚未轉移的世家仍然保留，但需於2015年3月31日前，到客服中心回報申請額外轉移
+                                p - 由於每個遊戲帳號只能擁有一個世家，玩家需要建立等量的遊戲帳號，並回報哪個世家需要轉移到哪個遊戲帳號
+                                p - 所有世家必須轉移到相同xoyobox平台帳號底下
+                                p - 舊主程式可透過更新升級，玩家亦可選擇下載全新主程式。
+                                p - 驗證電郵後，可使用修改密碼及其他會員功能，更可參加會員活動！
+                                table.btn_box(border="0",width="420",align="center",cellspacing="0",cellpadding="0")
+                                    tr
+                                        td(colspan="2")
+                                            a.tranfer_btn()
+                                        td
+                                            a.back_game()
+                                    tr
+                                        td
+                                            a.down_game()
+                                        td
+                                            a.check_email()
+                                        td
+                                            a.custom()
+
 
                         .notice_box
                             h3 西山居 繼續給你更好的《月影傳說》

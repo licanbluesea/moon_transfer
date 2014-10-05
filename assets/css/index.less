@@ -67,7 +67,7 @@ body{
   background-position: 0 0 ;
 }
 .step_box{
-  background: url("@{img_url}con_bg.jpg") no-repeat;
+  background: #141726 url("@{img_url}con_bg.jpg") no-repeat;
   color: #B5CCD6;
   h1{
     font-size: 18px;
@@ -206,6 +206,56 @@ body{
     &.sure_btn{
       width: 66px;
       background-position: -213px -228px;
+    }
+  }
+}
+.show_gameaccount{
+  border:1px #323849 solid;
+  margin: 40px 0;
+  th{
+    height: 35px;
+    padding-left: 5px;
+    background:#222738 ;
+  }
+  td{
+    height: 35px;
+    padding-left: 5px;
+    background:#121623 ;
+    &.ed{
+      color:#E77D26;
+    }
+    &.no{
+      color: #8DDC3E;
+    }
+  }
+}
+.btn_box{
+  margin-top: 20px;
+  td{
+    padding: 5px 0;
+  }
+  a{
+    .sprite;
+    display: block;
+    width: 127px;
+    height: 35px;
+    &.tranfer_btn{
+      width: 274px;
+      background-position: -127px -254px;
+    }
+    &.back_game{
+      background-position: 0 -254px;
+    }
+    &.down_game{
+      background-position: 0 -359px;
+    }
+    &.check_email{
+      position: relative;
+      left: 4px;
+      background-position:0 -324px ;
+    }
+    &.custom{
+      background-position:0 -289px ;
     }
   }
 }
