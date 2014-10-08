@@ -29,11 +29,11 @@ html
 
                                         p 我之前一直使用遊戲帳號玩：
                                         ul
-                                            li.reg
-                                            li.log
+                                            li.reg.act_reg
+                                            li.log.act_log
                                     .thrid_box
                                         p 我之前一直使用Facebook帳號玩：
-                                        a
+                                        a(href="javascript:void(0);",title="Facebook",onclick="_isFacebookLogin=true;_showServerChoose();return window.xoyoboxHeader.thirdPartyLogin('facebook','4K3LDE2Tf/p1lzzKj5zGx85qX4c=',$(this),'redirect_yjm1');")
                                 h3 重要提醒＊
                                 ul
                                     li －　由於遊戲內容有所變更，必須進行轉移才能繼續進行遊戲，並使用各種會員服務。
@@ -41,7 +41,7 @@ html
                                     li －　如因分享帳號密碼導致任何帳號在進行轉移時引起持有糾紛，玩家需報警求助，西山居無法判定誰是最先持有者。
 
                             .step_a2(style="display:none")
-                               table.user_table(border="0",width="425",align="center",cellspacing="0",cellpadding="0")
+                               table.user_table.register_form_ui(border="0",width="425",align="center",cellspacing="0",cellpadding="0")
                                     tr
                                         td.name
                                         td 請註冊新的xoyobox賬號
@@ -49,49 +49,53 @@ html
                                     tr
                                         td.name xoyobox賬號：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text(type="text",name="account", size=35)
                                         td
                                     tr
                                         td.name 密碼：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text(type="password",name="password", size=35)
                                         td
                                     tr
                                         td.name 再次輸入密碼：
                                         td
-                                           input.text(type="text", size=35)
+                                           input.text(type="password",name="repeat", size=35)
                                         td
                                     tr
                                         td.name 選擇所在地區：
                                         td
-                                           select
+                                            select(name="areaId")
+                                                option(value="1",selected) 香港
+                                                option(value="2") 马来西亚
+                                                option(value="3") 台湾
 
                                         td
                                     tr
                                         td.name 請輸入驗證碼：
                                         td
-                                           input.text(type="text", size=15)
-                                           img(width="90",height="25")
-                                        td 看不清，換一下
+                                           input.text(type="text",name="captcha", size=15)
+                                           img#registCodeImg(width="90",height="25",src="https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist")
+                                        td
+                                            a(href="javascript:$('#registCodeImg').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=regist&t=1411699342&tt='+(new Date()).getTime());") 看不清，換一下
                                     tr
                                         td.name
                                         td(colspan=2)
-                                            input(type="checkbox")
+                                            input(type="checkbox",name='agreement',checked='checked')
                                             | 同意
-                                            a() 服務條款
+                                            a(style='text-decoration: underline;', target='_blank', href='https://hk.xoyobox.com/terms-of-service.html') 服務條款
                                             | 及
-                                            a() 隱私條款
+                                            a(href='https://hk.xoyobox.com/privacy.html', style='text-decoration: underline;', target='_blank') 隱私條款
                                             | &nbsp;&nbsp;&nbsp;&nbsp;
-                                            input(type="checkbox")
+                                            input(type="checkbox", name='subscribe',checked='checked')
                                             | 免費接收禮物及資訊
                                     tr
                                         td.name
                                         td(colspan=2)
-                                            button.reg_btn
+                                            button.reg_btn.submit_btn
                                             button.esc_btn
 
                             .step_a3(style="display:none")
-                                table.user_table(border="0",width="425",align="center",cellspacing="0",cellpadding="0")
+                                table.user_table.login_form_ui(border="0",width="425",align="center",cellspacing="0",cellpadding="0")
                                     tr
                                         td.name
                                         td 請登入xoyobox賬號
@@ -99,25 +103,27 @@ html
                                     tr
                                         td.name xoyobox賬號：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text.account(type="text", size=35)
                                         td
                                     tr
                                         td.name 密碼：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text.password(type="password", size=35)
                                         td
 
-                                    tr
+                                    tr.login_captcha(style="display:none")
                                         td.name 請輸入驗證碼：
                                         td
-                                            input.text(type="text", size=15)
-                                            img(width="90",height="25")
-                                        td 看不清，換一下
+                                            input.text.captcha(type="text", size=15)
+                                            span.login_captcha_img
+                                                img(width="90",height="25")
+                                        td
+                                            a(href="javascript:$('.login_captcha_img img').attr('src','https://hk.xoyobox.com/resources/images/captcha.php?form_id=login&t=1411699342&tt='+(new Date()).getTime());")  看不清，換一下
 
                                     tr
                                         td.name
                                         td(colspan=2)
-                                            button.log_btn
+                                            button.log_btn.submit_btn
                                             button.esc_btn
                             .step_b1(style="display:none")
                                 h1 選擇遊戲帳號：
@@ -194,7 +200,7 @@ html
                                 p.desc * 將轉移帳號內最後登入的世家及該世家所屬角色
                                 p.desc * 系統以先轉移帳號者作為依歸，如因分享帳號密碼導致持有糾紛，玩家需報警求助
 
-                            .step_d
+                            .step_d(style="display:none")
                                 h1 恭喜，閣下此遊戲帳號最後登入的世家及相關角色已經匯入到 此xoyobox帳號內。
                                 p 此帳號的世家資料如下：
                                 table.show_gameaccount(border="1",width="100%",align="center",cellspacing="0",cellpadding="0")

@@ -39,18 +39,23 @@ PageUI.prototype = {
         });
 
     },
+    "log_status":function(){
+
+    },
+    "loged_status":function(){
+
+    },
     "statusChange": function () {
         var obj = this;
         obj.isLogin = obj.xoyoboxHeader.isLogin();
         if (this.isLogin == true) {
             //已登陆
             obj.account = obj.xoyoboxHeader.information.account;
-            obj.info = obj.xoyoboxHeader.information
-            obj.showJxsjLoginUI()
+            obj.info = obj.xoyoboxHeader.information;
+            this.loged_status();
         } else {
+            this.log_status();
             //未登录，显示登陆首页UI
-            this.hideUI();
-            this.showStartBtnUI();
         }
 
     },
@@ -65,8 +70,9 @@ PageUI.prototype = {
     //用户登陆成功相关处理
     "onLoginSuccess": function () {
         var obj = this;
+
         obj.account = obj.xoyoboxHeader.information.account;
-        obj.showJxsjLoginUI();
+        obj.statusChange();
 
     },
     //平台登陆方法
@@ -91,7 +97,10 @@ PageUI.prototype = {
                         obj.xoyoboxHeader.initFinished();
                     });
                     alert('登陸成功！');
+                    obj.hideLoginpass();
                     obj.onLoginSuccess();
+
+
                 } else if (r.code == 3) {
                     alert(r.tips);
                     obj.showLoginCaptchaInput(r.data.captchaImgTag)
@@ -206,7 +215,9 @@ PageUI.prototype = {
             obj.regist(account, password, repeat, subscribe, areaId, captcha);
         });
     },
-
+    "hideLoginpass":function(){
+        $('.login_form_ui .password').val("");
+    },
     //开始按钮UI显示
     "showStartBtnUI": function () {
         var obj = this;
@@ -368,17 +379,6 @@ PageUI.prototype = {
     }
 
 }
-
-$(function () {
-    window.pageUI = new PageUI();
-    /*$('#startGameBtn').click(function(){
-        if(window.xoyoboxHeader.isLogin()){
-            window.xoyoboxHeader.showServerChoose('/api/api.php?action=getGameServerList');
-        }else{
-            window.xoyoboxHeader.needLogin();
-        }
-    });*/
-});
 
 
 
