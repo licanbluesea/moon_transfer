@@ -26,25 +26,25 @@
       <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="14.670886" vertical-offset="4408" max-vertical-offset="5586">
+            <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="7.936709" vertical-offset="3876" max-vertical-offset="5586">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="page_transfer.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="page_transfer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="145" column="40" selection-start="4805" selection-end="4808" vertical-scroll-proportion="0.0" vertical-offset="2394" max-vertical-offset="3420">
+            <state line="128" column="44" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.71556884" vertical-offset="1954" max-vertical-offset="3895">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="50" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.63023955" vertical-offset="700" max-vertical-offset="1368">
+            <state line="62" column="21" selection-start="1944" selection-end="1951" vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1444">
               <folding />
             </state>
           </provider>
@@ -101,8 +101,8 @@
         <option value="$PROJECT_DIR$/assets/js/page_plugin.js" />
         <option value="$PROJECT_DIR$/assets/css/index.less" />
         <option value="$PROJECT_DIR$/index.jade" />
-        <option value="$PROJECT_DIR$/assets/js/page_transfer.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/assets/js/page_transfer.js" />
       </list>
     </option>
   </component>
@@ -673,21 +673,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="14.670886" vertical-offset="4408" max-vertical-offset="5586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="40" selection-start="4805" selection-end="4808" vertical-scroll-proportion="0.0" vertical-offset="2394" max-vertical-offset="3420">
+        <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="7.936709" vertical-offset="3876" max-vertical-offset="5586">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="50" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.63023955" vertical-offset="700" max-vertical-offset="1368">
+        <state line="62" column="21" selection-start="1944" selection-end="1951" vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1444">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="128" column="44" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.71556884" vertical-offset="1954" max-vertical-offset="3895">
           <folding />
         </state>
       </provider>

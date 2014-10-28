@@ -60,6 +60,10 @@ function routers($params){
             var _obj = {"status":1,"tips":"賬號創建成功！"};
             return _obj;
             break;
+        case 'faclist':
+            var _obj = {"status":1, "tips":[{"familyid":123, "familyname":"世家名", "state" : 1},{"familyid":123, "familyname":"世家名", "state" : 1}]};
+            return _obj;
+            break;
     }
 };
 //var log_list = [{"title":"多玩魔兽数据库9月12日更新了5.4新增的武器和装备","time":"2014 10.01","url":"http:jx3.xoyo.com"},{"title":"多玩魔兽数据库9月12日更新了5.4新增的武器和装备","time":"2014 10.01","url":"http:jx3.xoyo.com"},{"title":"多玩魔兽数据库9月12日更新了5.4新增的武器和装备","time":"2014 10.01","url":"http:jx3.xoyo.com"},{"title":"多玩魔兽数据库9月12日更新了5.4新增的武器和装备","time":"2014 10.01","url":"http:jx3.xoyo.com"}];

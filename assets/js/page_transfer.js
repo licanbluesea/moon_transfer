@@ -12,6 +12,10 @@
             PageUI.prototype.loged_status=this.loged_add;
             this.game_sessionId(function(){
                 _that.game_isthird(function($data){
+                        if($data.status<0){
+                            alert($data.tips)
+                            return false;
+                        }
                         _that.isthird = $data.tips.thirdparty*1;
                         _that.page_ui();
                         window.pageUI = new PageUI();
@@ -62,6 +66,9 @@
                     });
                     $(".step_b1  .game_account").append(_html);
                     $(".step_b1").show();
+
+                }else{
+                    alert($data.tips);
                 }
                 //console.log($data);
             });
@@ -95,7 +102,11 @@
         },
         sub_gameAccount:function($params){
             this.game_creat($params,function($data){
-
+                if($data.status>0){
+                    alert($data.tips);
+                }else{
+                    alert($data.tips);
+                }
             });
         },
         title_change:function($title){
@@ -109,13 +120,13 @@
 
             }
         },
-        game_isthird:function($fn){
+        game_rolist:function($params,$fn){
             var _that = this;
             $.ajax({
                 'type': 'GET',
                 'dataType': 'jsonp',
-                'data':{"esid":_that.session_url},
-                'url':this.game_url+"thirdparty/",
+                'data':$params,
+                'url':this.game_url+"faclist/",
                 'success':function($data){
                     if($fn){
                         $fn($data);
@@ -148,7 +159,21 @@
                     _that.session_url = $data
                     if($fn){
 
-                        $fn();
+                        $fn($data);
+                    }
+                }
+            });
+        },
+        game_isthird:function($fn){
+            var _that = this;
+            $.ajax({
+                'type': 'GET',
+                'dataType': 'jsonp',
+                'data':{"esid":_that.session_url},
+                'url':this.game_url+"thirdparty/",
+                'success':function($data){
+                    if($fn){
+                        $fn($data);
                     }
                 }
             });
