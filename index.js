@@ -8,12 +8,14 @@ var fs = require('fs');
 
 var app = module.exports = express();
 app.all('*', function(req, res, next) {
-    res.header("host","www.licanbluesea.com")
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
-    res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
-    res.header("X-Powered-By",' 3.2.1')
+   res.header("host","www.licanbluesea.com");
+   res.header("Access-Control-Allow-Origin", "*");
+   res.header("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
+   res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+   res.header("X-Powered-By",' 3.2.1');
+
     if(req.method=="OPTIONS") res.send(200);
+
     else  next();
 });
 app.use( lessMiddleware(__dirname +'/',{
@@ -22,14 +24,12 @@ app.use( lessMiddleware(__dirname +'/',{
 app.use(express.static(__dirname + '/public'));
 app.use("/assets",express.static(__dirname + '/assets'));
 app.get('/', function(req, res){
-    res.end(output("index"));
-});
-app.get('/list', function(req, res){
-    res.end(output("new_list"));
-});
 
-app.get('/news', function(req, res){
-    res.end(output("news"));
+    res.set('Content-Type', 'text/html');
+    //res.header('Transfer-Encoding:','chunked')
+    //res.header('Cache-Control','no-cache, no-store, max-age=0, must-revalidate, max-age=0no-cache, no-store, max-age=0, must-revalidate, max-age=0')
+    //res.header('Content-Encoding','gzip');
+    res.end(output("index"));
 });
 app.get('/migration/*',function(req,res){
     var _fun = req.query.callback
