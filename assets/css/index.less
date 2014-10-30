@@ -65,6 +65,12 @@ body{
   .sprite;
   height: 83px;
   background-position: 0 0 ;
+  &.step_two_t{
+    background-position:0 -83px;
+  }
+  &.step_three_t{
+    background-position:0 bottom;
+  }
 }
 .step_box{
   background: #141726 url("@{img_url}con_bg.jpg") no-repeat;
@@ -222,12 +228,13 @@ body{
     height: 35px;
     padding-left: 5px;
     background:#121623 ;
-    &.ed{
-      color:#E77D26;
-    }
-    &.no{
-      color: #8DDC3E;
-    }
+
+  }
+  .ed{
+    color:#E77D26;
+  }
+  .no{
+    color: #8DDC3E;
   }
 }
 .btn_box{

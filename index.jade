@@ -134,13 +134,15 @@ html
 
                                         td
                                             select.game_account
-                                                option 選擇此遊戲帳號
+                                                option(value="") 選擇此遊戲帳號
 
                                 p.desc(style="margin-top:20px;")
                                     | 如沒有遊戲帳號，可直接建立一個可用於登入「月影傳說」的普通遊戲帳號每個XOYOBOX平台帳號最多可創建
                                     em 10個 
                                     | 普通月影傳說遊戲帳號，如綁定社群帳號則沒有限制。
-                                a.createGameaccount_btn(href="javascript:;",target="_self") 創建遊戲帳號
+                                a.login_gameaccount_btn(href="javascript:;",target="_self") 登入遊戲賬號
+                                //|   ｜
+                                //a.createGameaccount_btn(href="javascript:;",target="_self") 創建遊戲賬號
 
 
 
@@ -170,7 +172,7 @@ html
                                         td.name 驗證碼：
                                         td
                                             input.text(type="text",name="game_capcha", size=35)
-                                            img(width=80,height=25,src="http://app.moon.xoyobox.com/captcha/")
+                                            img(width=80,height=25,src="http://zt.moon.xoyobox.com/captcha/")
                                         td
 
 
@@ -185,29 +187,29 @@ html
                                     tr
                                         td.name 遊戲帳號：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text(type="text", size=35,name="check_Gameaccount")
                                         td
                                     tr
                                         td.name 遊戲密碼：
                                         td
-                                            input.text(type="text", size=35)
+                                            input.text(type="text", size=35,name="check_Gamepass")
                                         td
                                     tr
                                         td.name
                                         td(colspan="2")
-                                            input(type="checkbox")
+                                            input(type="checkbox",name="auth_Gameaccount",checked="true")
                                             | 我同意授權此帳號交予西山居進行登入程序
 
                                     tr
                                         td.name
                                         td(colspan=2)
-                                            button.sure_btn
+                                            button#check_Gameaccount.sure_btn
 
                                 p.desc * 必須勾選同意才能開始轉移程序
                                 p.desc * 將轉移帳號內最後登入的世家及該世家所屬角色
                                 p.desc * 系統以先轉移帳號者作為依歸，如因分享帳號密碼導致持有糾紛，玩家需報警求助
                             .step_c1(style="display:none")
-                                h1 選擇遊戲帳號：
+                                h1 選擇遊戲世家：
                                 p 由於版本更新，每個遊戲帳號只能存在一個世家
                                 p 請選擇xoyobox底下的遊戲帳號，閣下於流程三所選擇的世家，將會轉移至此遊戲帳號
                                 table.user_table(border="0",width="425",align="center",cellspacing="0",cellpadding="0")
@@ -215,27 +217,22 @@ html
 
                                         td
                                             select.game_role
-                                                option 選擇此遊戲帳號
+                                                option(value="0") 選擇此遊戲帳號
 
                                 p.desc(style="margin-top:20px;")
                                     | 如沒有遊戲帳號，可直接建立一個可用於登入「月影傳說」的普通遊戲帳號每個XOYOBOX平台帳號最多可創建
                                     em 10個 
                                     | 普通月影傳說遊戲帳號，如綁定社群帳號則沒有限制。
-                                a.createGameaccount_btn(href="javascript:;",target="_self") 創建遊戲帳號
+                                //a.createGameaccount_btn(href="javascript:;",target="_self") 創建遊戲帳號
 
                             .step_d(style="display:none")
                                 h1 恭喜，閣下此遊戲帳號最後登入的世家及相關角色已經匯入到 此xoyobox帳號內。
                                 p 此帳號的世家資料如下：
-                                table.show_gameaccount(border="1",width="100%",align="center",cellspacing="0",cellpadding="0")
+                                table#role_list_show.show_gameaccount(border="1",width="100%",align="center",cellspacing="0",cellpadding="0")
                                     tr
                                         th 世家名稱
                                         th 轉移狀態
-                                    tr
-                                        td 一級棒
-                                        td.no 未轉移
-                                    tr
-                                        td 一級棒
-                                        td.ed 已轉移
+
                                 p - 尚未轉移的世家仍然保留，但需於2015年3月31日前，到客服中心回報申請額外轉移
                                 p - 由於每個遊戲帳號只能擁有一個世家，玩家需要建立等量的遊戲帳號，並回報哪個世家需要轉移到哪個遊戲帳號
                                 p - 所有世家必須轉移到相同xoyobox平台帳號底下
@@ -244,7 +241,7 @@ html
                                 table.btn_box(border="0",width="420",align="center",cellspacing="0",cellpadding="0")
                                     tr
                                         td(colspan="2")
-                                            a.tranfer_btn()
+                                            a.tranfer_btn(href="javascript:location.reload()")
                                         td
                                             a.back_game(href="http://moon.xoyobox.com",target="_blank")
                                     tr

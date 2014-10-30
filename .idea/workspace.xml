@@ -26,7 +26,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="7.936709" vertical-offset="3876" max-vertical-offset="5586">
+            <state line="144" column="34" selection-start="8179" selection-end="8179" vertical-scroll-proportion="-54.72" vertical-offset="0" max-vertical-offset="5529">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="page_transfer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="44" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.71556884" vertical-offset="1954" max-vertical-offset="3895">
+            <state line="6" column="8" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17729394" vertical-offset="0" max-vertical-offset="7372">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="21" selection-start="1944" selection-end="1951" vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1444">
+            <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="1596">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="index.less" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/css/index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="22" selection-start="3426" selection-end="3426" vertical-scroll-proportion="2.0754716" vertical-offset="4328" max-vertical-offset="5073">
+            <state line="70" column="16" selection-start="1081" selection-end="1093" vertical-scroll-proportion="-4.282051" vertical-offset="996" max-vertical-offset="5206">
               <folding />
             </state>
           </provider>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/assets/css/common.less" />
         <option value="$PROJECT_DIR$/common.jade" />
         <option value="$PROJECT_DIR$/assets/js/page_plugin.js" />
-        <option value="$PROJECT_DIR$/assets/css/index.less" />
-        <option value="$PROJECT_DIR$/index.jade" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/index.jade" />
+        <option value="$PROJECT_DIR$/assets/css/index.less" />
         <option value="$PROJECT_DIR$/assets/js/page_transfer.js" />
       </list>
     </option>
@@ -664,30 +664,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="928" max-vertical-offset="1596">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="22" selection-start="3426" selection-end="3426" vertical-scroll-proportion="2.0754716" vertical-offset="4328" max-vertical-offset="5073">
+        <state line="70" column="16" selection-start="1081" selection-end="1093" vertical-scroll-proportion="-4.282051" vertical-offset="996" max-vertical-offset="5206">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="84" selection-start="9492" selection-end="9503" vertical-scroll-proportion="7.936709" vertical-offset="3876" max-vertical-offset="5586">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="21" selection-start="1944" selection-end="1951" vertical-scroll-proportion="0.0" vertical-offset="662" max-vertical-offset="1444">
+        <state line="144" column="34" selection-start="8179" selection-end="8179" vertical-scroll-proportion="-54.72" vertical-offset="0" max-vertical-offset="5529">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="44" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.71556884" vertical-offset="1954" max-vertical-offset="3895">
+        <state line="6" column="8" selection-start="145" selection-end="145" vertical-scroll-proportion="0.17729394" vertical-offset="0" max-vertical-offset="7372">
           <folding />
         </state>
       </provider>

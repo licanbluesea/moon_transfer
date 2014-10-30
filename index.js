@@ -49,11 +49,11 @@ function routers($params){
     var _url = $params.replace("\/","");
     switch(_url){
         case 'acclist':
-            var _obj = {"status":1,"tips":{account:["user1", "user2", "user3"]}}
+            var _obj = {"status":1,"tips":["user1", "user2", "user3"]};
             return _obj;
             break;
         case 'thirdparty':
-            var _obj = {"status":1,"tips":{"thirdparty":0}};
+            var _obj = {"status":1,"tips":{"thirdparty":1}};
             return _obj;
             break;
         case 'reg':
@@ -61,7 +61,15 @@ function routers($params){
             return _obj;
             break;
         case 'faclist':
-            var _obj = {"status":1, "tips":[{"familyid":123, "familyname":"世家名", "state" : 1},{"familyid":123, "familyname":"世家名", "state" : 1}]};
+            var _obj = {"status":-1, "tips":[{"familyid":123, "familyname":"世家名", "state" : 1},{"familyid":123, "familyname":"世家名", "state" : 0}]};
+            return _obj;
+            break;
+        case 'authaccount':
+            var _obj = {"status":1,"tips":""} ;
+            return _obj;
+            break;
+        case 'transfer':
+            var _obj = {"status":1,"tips":""};
             return _obj;
             break;
     }
