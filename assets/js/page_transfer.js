@@ -35,6 +35,11 @@
                     return false;
                 }
                 _that.isthird = $data.tips.thirdparty*1;
+                $(".game_account").find("option").each(function(i,n){
+                    if(i){
+                        n.remove();
+                    }
+                });
                 $(".step_input > div").hide();
                 _that.game_info(function($data){
                     if($data.status > 0){
@@ -188,6 +193,11 @@
         },
         role_list:function(){
             this.title_change("three");
+            $(".game_role").find("option").each(function(i,n){
+                if(i){
+                    n.remove();
+                }
+            });
             this.game_rolist(
                 {
                     "esid":this.session_url,
@@ -249,7 +259,7 @@
             });
         },
         transfer_rolelist:function($fn){
-            console.log(this);
+            //console.log(this);
             this.game_rolist(
                 {
                     "esid":this.session_url,

@@ -32,6 +32,7 @@ PageUI.prototype = {
             }
         });
         this.xoyoboxHeader.onLogoutSuccess(function () {
+
             obj.isLogin = obj.xoyoboxHeader.isLogin();
             if (typeof(cb) == 'function') {
                 cb.call(obj);
@@ -155,6 +156,7 @@ PageUI.prototype = {
     "logout":function(){
         var obj=this
         this.xoyoboxHeader.logout(function(){
+
             obj.updateStatus();
         });
     },
