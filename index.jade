@@ -13,10 +13,10 @@ html
                     li
                         a(href=href,target="_blank")=name
                 ul
-                    +T_l("巴哈姆特","")
-                    +T_l("遊戲基地","")
-                    +T_l("2000fun","")
-                    +T_l("粉絲團","")
+                    +T_l("巴哈姆特","https://www.facebook.com/xoyoboxmoon")
+                    +T_l("遊戲基地","http://www.gamebase.com.tw/forum/61468")
+                    +T_l("2000fun","http://www.2000fun.com/forum-4216-1.html ")
+                    +T_l("粉絲團","https://www.facebook.com/xoyoboxmoon")
             .con
                 .left_bar
                     .step_title
@@ -246,7 +246,7 @@ html
                                             a.back_game(href="http://moon.xoyobox.com",target="_blank")
                                     tr
                                         td
-                                            a.down_game()
+                                            a.down_game(href="javascript:alert('敬請期待！');")
                                         td
                                             a.check_email(href="https://hk.xoyobox.com/member-changeEmail.html",target="_blank")
                                         td
@@ -276,11 +276,11 @@ html
                                 li 1. 如需繼續使用舊角色進行遊戲，必須於此網頁登記轉移，轉移最後期限為2015年3月31日。於此日之後將關閉轉移，並永久刪除未進行轉移的角色。
                                 li 6. 西山居保留任何有關修改轉移項目的最終決定權。
                 .right_bar
-                    a.down_load
+                    a.down_load(href="javascript:alert('敬請期待！');")
                     div
-                        a
+                        a(href="https://www.facebook.com/xoyoboxmoon")
                             img(width="193",height="108",src="assets/images/ad_1.jpg")
                     div
-                        a
+                        a(href="javascript:alert('敬請期待！');")
                             img(width="193",height="263",src="assets/images/ad_2.jpg")
         include ./common.jade

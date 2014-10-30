@@ -26,7 +26,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="94" selection-start="8100" selection-end="8100" vertical-scroll-proportion="0.70711976" vertical-offset="2261" max-vertical-offset="5529">
+            <state line="248" column="85" selection-start="14105" selection-end="14105" vertical-scroll-proportion="0.6003236" vertical-offset="4341" max-vertical-offset="5529">
               <folding />
             </state>
           </provider>
@@ -35,8 +35,10 @@
       <file leaf-file-name="page_transfer.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="14" selection-start="6691" selection-end="6691" vertical-scroll-proportion="-13.68" vertical-offset="3173" max-vertical-offset="7372">
-              <folding />
+            <state line="5" column="8" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="7372">
+              <folding>
+                <marker date="1414643661000" expanded="true" signature="87:199" placeholder="//..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,7 +46,7 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1596">
+            <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1596">
               <folding />
             </state>
           </provider>
@@ -220,6 +222,11 @@
     <property name="FullScreen" value="true" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jx3/db20140827" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -324,7 +331,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25941423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27382874" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -402,7 +409,9 @@
     <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="51" column="33" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2660">
-          <folding />
+          <folding>
+            <marker date="1414643661000" expanded="true" signature="87:199" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +467,9 @@
     <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="52" column="52" selection-start="1824" selection-end="1824" vertical-scroll-proportion="0.0" vertical-offset="1987" max-vertical-offset="2546">
-          <folding />
+          <folding>
+            <marker date="1414643661000" expanded="true" signature="87:199" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -514,7 +525,9 @@
     <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="27" selection-start="847" selection-end="847" vertical-scroll-proportion="0.0" vertical-offset="494" max-vertical-offset="1140">
-          <folding />
+          <folding>
+            <marker date="1414643661000" expanded="true" signature="87:199" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -671,23 +684,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1596">
-          <folding />
+        <state line="5" column="8" selection-start="87" selection-end="87" vertical-scroll-proportion="-3.8" vertical-offset="0" max-vertical-offset="7372">
+          <folding>
+            <marker date="1414643661000" expanded="true" signature="87:199" placeholder="//..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="14" selection-start="6691" selection-end="6691" vertical-scroll-proportion="-13.68" vertical-offset="3173" max-vertical-offset="7372">
+        <state line="63" column="34" selection-start="1979" selection-end="1979" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="1596">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="94" selection-start="8100" selection-end="8100" vertical-scroll-proportion="0.70711976" vertical-offset="2261" max-vertical-offset="5529">
+        <state line="248" column="85" selection-start="14105" selection-end="14105" vertical-scroll-proportion="0.6003236" vertical-offset="4341" max-vertical-offset="5529">
           <folding />
         </state>
       </provider>
