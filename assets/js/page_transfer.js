@@ -3,8 +3,8 @@
  */
 (function($){
     $.extend({moon:{
-        game_url:"http://172.18.70.74:3000/migration/",
-        //game_url:"http://zt.moon.xoyobox.com/moon/migration/",
+        //game_url:"http://172.18.70.74:3000/migration/",
+        game_url:"http://zt.moon.xoyobox.com/moon/migration/",
         session_url:"",
         isthird:0,
         account_name:"",
