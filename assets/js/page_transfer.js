@@ -183,7 +183,7 @@
         },
         isthrid:function($account){
             this.account_name = $account;
-            if(!this.isthird){this.view_checkgameAccount($account);return false;}
+            //if(!this.isthird){this.view_checkgameAccount($account);return false;}
             this.role_list();
         },
         role_list:function(){
