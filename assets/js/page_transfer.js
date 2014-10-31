@@ -3,12 +3,14 @@
  */
 (function($){
     $.extend({moon:{
-        //game_url:"http://172.18.70.74:3000/migration/",
-        game_url:"http://zt.moon.xoyobox.com/moon/migration/",
+        game_url:"http://172.18.70.74:3000/migration/",
+        //game_url:"http://zt.moon.xoyobox.com/moon/migration/",
         session_url:"",
         isthird:0,
         account_name:"",
+        old_account:"",
         role_id:"",
+        role_new:0,
         init:function(){
             var _that = this;
             PageUI.prototype.log_status=this.log_add;
@@ -76,7 +78,7 @@
             });
             $(".login_gameaccount_btn").click(function(){
                 $(".step_input > div").hide();
-                $(".step_c").show();
+                $(".step_b2").show();
             });
 
             $(".subGameaccount_btn").click(function(){
@@ -87,6 +89,7 @@
                 if(_val){
                     var _confirm = confirm("確定要使用"+_val+"這個賬號嗎？")
                     if(_confirm){
+                        //_that.old_account = $params.account;
                         _that.isthrid(_val);
                     }else{
                         $(this).children("option").eq(0).attr("selected",true);
@@ -140,10 +143,17 @@
             this.game_create($params,function($data){
                 if($data.status>0){
                     alert($data.tips);
-
                     //console.log($params);
                     _that.account_name = $params.account;
-                    _that.transfer_role(_that.role_id);
+                    if(_that.role_new){
+                        _that.account_name = $params.account;
+                        _that.transfer_role(_that.role_id);
+                    }else{
+                        _that.account_name = $params.account;
+                        $(".step_input > div").hide();
+                        $(".step_c").show();
+                    }
+                    $("input:text,input:password").val("");
                 }else{
                     alert($data.tips);
                 }
@@ -180,28 +190,30 @@
             this.game_checkGameaccount($params,function($data){
                 if($data.status>0){
                     //console.log($params.account);
-                    _that.account_name = $params.account;
+                     _that.old_account = $params.account;
+                     _that.role_list($params.account);
                 }else{
                    alert($data.tips);
                 }
             });
         },
         isthrid:function($account){
-            this.account_name = $account;
+            this.old_account = $account;
             //if(!this.isthird){this.view_checkgameAccount($account);return false;}
             this.role_list();
         },
-        role_list:function(){
+        role_list:function($account){
             this.title_change("three");
             $(".game_role").find("option").each(function(i,n){
                 if(i){
                     n.remove();
                 }
             });
+           //var _account = $account ? $account | this.account_name;
             this.game_rolist(
                 {
                     "esid":this.session_url,
-                    "account":this.account_name,
+                    "account": $account || this.account_name,
                     "all":0
                 },
                 function($data){
@@ -230,6 +242,7 @@
                 if($data.status < 0){
                     alert($data.tips);
                 }
+                _that.role_new = 0;
                 _that.transfer_rolelist(function($data){
                     $.each($data.tips,function(i,n){
                         var row = _table.insertRow(i+1);
@@ -237,18 +250,18 @@
                         var cell1 = row.insertCell(1);
                         cell0.innerHTML = n.familyname
                         if(!n.state){
-                            cell1.innerHTML = "<span class='no'>未轉移&nbsp;&nbsp;&nbsp;&nbsp;<a data-id='"+ n.familyid+"' class='createGameaccount_btn' href='#' target='_self'>轉移至新賬號上</a> </span>"
+                            cell1.innerHTML = "<span class='no'>未轉移&nbsp;&nbsp;&nbsp;&nbsp;<a data-id='"+ n.familyid+"' class='createGameaccount_btn' href='#' target='_self'>轉移至新賬號上</a></span>"
                         }else{
                             cell1.innerHTML = "<span class='ed'>已轉移</span>"
                         }
-
-                        $(".createGameaccount_btn").on("click",function(){
+                        $(".createGameaccount_btn").unbind("click").on("click",function(){
                             _that.role_id = $(this).attr("data-id");
+                            _that.role_new =1;
                             $(".step_input > div").hide();
                             $(".step_b2").show();
                         });
                         if(_that.role_id != ""){
-                            $(".createGameaccount_btn").hide();
+                            $(".createGameaccount_btn").hide().after("| 已提交后台处理");
                         }
                     });
 
@@ -259,11 +272,11 @@
             });
         },
         transfer_rolelist:function($fn){
-            //console.log(this);
+
             this.game_rolist(
                 {
                     "esid":this.session_url,
-                    "account":this.account_name,
+                    "account":this.old_account,
                     "all":1
                 },
                 function($data){
