@@ -26,7 +26,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="73" selection-start="12453" selection-end="12453" vertical-scroll-proportion="0.0" vertical-offset="4161" max-vertical-offset="5529">
+            <state line="219" column="73" selection-start="12453" selection-end="12453" vertical-scroll-proportion="37.92" vertical-offset="5109" max-vertical-offset="5529">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="page_transfer.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="35" selection-start="5180" selection-end="5180" vertical-scroll-proportion="0.23529412" vertical-offset="2584" max-vertical-offset="7904">
+            <state line="250" column="29" selection-start="9281" selection-end="9281" vertical-scroll-proportion="0.278481" vertical-offset="4640" max-vertical-offset="7999">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="page_plugin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/page_plugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="8284">
+            <state line="34" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="8284">
               <folding />
             </state>
           </provider>
@@ -126,10 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2720" />
-    <option name="y" value="135" />
     <option name="width" value="1280" />
-    <option name="height" value="1024" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -341,11 +339,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2720" y="135" width="1280" height="1024" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25941423" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33972603" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -688,20 +686,6 @@
         <state line="173" column="21" selection-start="3473" selection-end="3473" vertical-scroll-proportion="0.30595812" vertical-offset="3097" max-vertical-offset="4845" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="73" selection-start="12453" selection-end="12453" vertical-scroll-proportion="0.0" vertical-offset="4161" max-vertical-offset="5529">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/page_plugin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="785" max-vertical-offset="8284">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="5" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1596">
@@ -709,9 +693,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="219" column="73" selection-start="12453" selection-end="12453" vertical-scroll-proportion="37.92" vertical-offset="5109" max-vertical-offset="5529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/page_plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="8284">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/page_transfer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="35" selection-start="5180" selection-end="5180" vertical-scroll-proportion="0.23529412" vertical-offset="2584" max-vertical-offset="7904">
+        <state line="250" column="29" selection-start="9281" selection-end="9281" vertical-scroll-proportion="0.278481" vertical-offset="4640" max-vertical-offset="7999">
           <folding />
         </state>
       </provider>

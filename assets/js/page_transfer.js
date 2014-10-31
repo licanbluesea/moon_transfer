@@ -146,10 +146,10 @@
                     //console.log($params);
                     _that.account_name = $params.account;
                     if(_that.role_new){
-                        _that.account_name = $params.account;
+                        //_that.account_name = $params.account;
                         _that.transfer_role(_that.role_id);
                     }else{
-                        _that.account_name = $params.account;
+                        //_that.account_name = $params.account;
                         $(".step_input > div").hide();
                         $(".step_c").show();
                     }
@@ -201,8 +201,10 @@
             });
         },
         isthrid:function($account){
+            //this.old_account = $account;
+            this.account_name = $account;
+            if(!this.isthird){this.view_checkgameAccount();return false;}
             this.old_account = $account;
-            if(!this.isthird){this.account_name = $account;this.view_checkgameAccount();return false;}
             this.role_list($account);
         },
         role_list:function($account){
@@ -244,7 +246,9 @@
                 "account":this.account_name,
                 "familyid":$role
             },function($data){
+                var _tips = 1;
                 if($data.status < 0){
+                     _tips = 0;
                     alert($data.tips);
                 }
                 _that.role_new = 0;
@@ -253,8 +257,9 @@
                         var row = _table.insertRow(i+1);
                         var cell0 = row.insertCell(0);
                         var cell1 = row.insertCell(1);
-                        cell0.innerHTML = n.familyname
-                        if(!n.state){
+                        cell0.innerHTML = n.familyname;
+
+                        if(!(n.state*1)){
                             cell1.innerHTML = "<span class='no'>未轉移&nbsp;&nbsp;&nbsp;&nbsp;<a data-id='"+ n.familyid+"' class='createGameaccount_btn' href='#' target='_self'>轉移至新賬號上</a></span>"
                         }else{
                             cell1.innerHTML = "<span class='ed'>已轉移</span>"
@@ -265,7 +270,7 @@
                             $(".step_input > div").hide();
                             $(".step_b2").show();
                         });
-                        if(_that.role_id != ""){
+                        if(_that.role_id != "" && _tips){
                             $(".createGameaccount_btn").hide().after("| 已提交后台处理");
                         }
                     });
