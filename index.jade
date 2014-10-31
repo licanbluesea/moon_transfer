@@ -172,7 +172,7 @@ html
                                         td.name 驗證碼：
                                         td
                                             input.text(type="text",name="game_capcha", size=35)
-                                            img(width=80,height=25,src="http://zt.moon.xoyobox.com/captcha/")
+                                            img#imgcapcha(style="cursor:pointer",width=80,height=25,src="http://zt.moon.xoyobox.com/captcha/",onclick="javascript:this.src='http://zt.moon.xoyobox.com/captcha/?t='+(new Date()).getTime()")
                                         td
 
 

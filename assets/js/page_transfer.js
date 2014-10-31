@@ -155,6 +155,7 @@
                     }
                     $("input:text,input:password").val("");
                 }else{
+                    $("#imgcapcha").attr("src","http://zt.moon.xoyobox.com/captcha/?t="+(new Date()).getTime());
                     alert($data.tips);
                 }
             });
@@ -193,6 +194,8 @@
                      _that.old_account = $params.account;
                      _that.role_list($params.account);
                 }else{
+
+
                    alert($data.tips);
                 }
             });
