@@ -53,7 +53,7 @@ function routers($params){
             return _obj;
             break;
         case 'thirdparty':
-            var _obj = {"status":1,"tips":{"thirdparty":1}};
+            var _obj = {"status":1,"tips":{"thirdparty":0}};
             return _obj;
             break;
         case 'reg':

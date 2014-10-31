@@ -163,7 +163,7 @@
         view_checkgameAccount:function($account){
             $(".step_input > div").hide();
             $(".step_c").show();
-            $("input[name='check_Gameaccount']").val($account);
+            //$("input[name='check_Gameaccount']").val($account);
 
         },
         checkgameAccount:function(){
@@ -202,7 +202,7 @@
         },
         isthrid:function($account){
             this.old_account = $account;
-            //if(!this.isthird){this.view_checkgameAccount($account);return false;}
+            if(!this.isthird){this.account_name = $account;this.view_checkgameAccount();return false;}
             this.role_list($account);
         },
         role_list:function($account){
@@ -212,8 +212,8 @@
                     n.remove();
                 }
             });
-            console.log($account);
-            console.log(this.account_name);
+            //console.log($account);
+            //console.log(this.account_name);
            //var _account = $account ? $account | this.account_name;
             this.game_rolist(
                 {
