@@ -200,7 +200,7 @@
         isthrid:function($account){
             this.old_account = $account;
             //if(!this.isthird){this.view_checkgameAccount($account);return false;}
-            this.role_list();
+            this.role_list($account);
         },
         role_list:function($account){
             this.title_change("three");
@@ -209,6 +209,8 @@
                     n.remove();
                 }
             });
+            console.log($account);
+            console.log(this.account_name);
            //var _account = $account ? $account | this.account_name;
             this.game_rolist(
                 {
