@@ -49,7 +49,7 @@ function routers($params){
     var _url = $params.replace("\/","");
     switch(_url){
         case 'acclist':
-            var _obj = {"status":1,"tips":["user1", "user2", "user3"]};
+            var _obj = {"status":1,"tips":[]};
             return _obj;
             break;
         case 'thirdparty':

@@ -142,7 +142,7 @@
             var _that = this;
             this.game_create($params,function($data){
                 if($data.status>0){
-                    alert($data.tips);
+                    alert("創建新賬號成功！");
                     //console.log($params);
                     _that.account_name = $params.account;
                     if(_that.role_new){
