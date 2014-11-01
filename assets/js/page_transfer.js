@@ -3,7 +3,7 @@
  */
 (function($){
     $.extend({moon:{
-        //game_url:"http://172.18.70.74:3000/migration/",
+        //game_url:"http://127.0.0.1:3000/migration/",
         game_url:"http://zt.moon.xoyobox.com/moon/migration/",
         session_url:"",
         isthird:0,
@@ -146,10 +146,13 @@
                     //console.log($params);
                     _that.account_name = $params.account;
                     if(_that.role_new){
-                        //_that.account_name = $params.account;
+
                         _that.transfer_role(_that.role_id);
                     }else{
-                        //_that.account_name = $params.account;
+                        if(_that.isthird){
+                            _that.role_list(_that.old_account);
+                            return false;
+                        }
                         $(".step_input > div").hide();
                         $(".step_c").show();
                     }
@@ -205,7 +208,8 @@
             this.account_name = $account;
             if(!this.isthird){this.view_checkgameAccount();return false;}
             this.old_account = $account;
-            this.role_list($account);
+            $(".step_input > div").hide();
+            $(".step_b2").show();
         },
         role_list:function($account){
             this.title_change("three");
@@ -214,9 +218,7 @@
                     n.remove();
                 }
             });
-            //console.log($account);
-            //console.log(this.account_name);
-           //var _account = $account ? $account | this.account_name;
+
             this.game_rolist(
                 {
                     "esid":this.session_url,
