@@ -37,26 +37,30 @@
                     return false;
                 }
                 _that.isthird = $data.tips.thirdparty*1;
-                $(".game_account").find("option").each(function(i,n){
-                    if(i){
-                        n.remove();
-                    }
-                });
-                $(".step_input > div").hide();
                 _that.game_info(function($data){
-                    if($data.status > 0){
-                        //console.log($data.tips)
-                        $.each($data.tips,function(i,n){
-                            _html += "<option value="+ n+" >"+ n+"</option>";
-
-                        });
-                        $(".step_b1  .game_account").append(_html);
-                        $(".step_b1").show();
-
-                    }else{
-                        alert($data.tips);
+                    if(!$data.tips.length){
+                        $(".step_c").show();
+                        return false
                     }
-                    //console.log($data);
+                    $(".game_account").find("option").each(function(i,n){
+                        if(i){
+                            n.remove();
+                        }
+                    });
+                    $(".step_input > div").hide();
+                    _that.game_info(function($data){
+                        if($data.status > 0){
+                            //console.log($data.tips)
+                            $.each($data.tips,function(i,n){
+                                _html += "<option value="+ n+" >"+ n+"</option>";
+                            });
+                            $(".step_b1  .game_account").append(_html);
+                            $(".step_b1").show();
+
+                        }else{
+                            alert($data.tips);
+                        }
+                    });
                 });
             });
         },
@@ -78,7 +82,7 @@
             });
             $(".login_gameaccount_btn").click(function(){
                 $(".step_input > div").hide();
-                $(".step_b2").show();
+                $(".step_c").show();
             });
 
             $(".subGameaccount_btn").click(function(){
@@ -89,7 +93,6 @@
                 if(_val){
                     var _confirm = confirm("確定要使用"+_val+"這個賬號嗎？")
                     if(_confirm){
-                        //_that.old_account = $params.account;
                         _that.isthrid(_val);
                     }else{
                         $(this).children("option").eq(0).attr("selected",true);
@@ -166,8 +169,7 @@
         view_checkgameAccount:function($account){
             $(".step_input > div").hide();
             $(".step_c").show();
-            //$("input[name='check_Gameaccount']").val($account);
-
+            $("input[name='check_Gameaccount']").val($account);
         },
         checkgameAccount:function(){
             var _Gameaccount = "",_Gamepass = "";
@@ -193,23 +195,18 @@
             var _that = this;
             this.game_checkGameaccount($params,function($data){
                 if($data.status>0){
-                    //console.log($params.account);
                      _that.old_account = $params.account;
                      _that.role_list($params.account);
                 }else{
-
-
                    alert($data.tips);
                 }
             });
         },
         isthrid:function($account){
-            //this.old_account = $account;
             this.account_name = $account;
-            if(!this.isthird){this.view_checkgameAccount();return false;}
+            if(!this.isthird){this.view_checkgameAccount($account);return false;}
             this.old_account = $account;
-            $(".step_input > div").hide();
-            $(".step_b2").show();
+            this.role_list();
         },
         role_list:function($account){
             this.title_change("three");
@@ -229,6 +226,10 @@
                     $(".step_input > div").hide();
                     $(".step_c1").show();
                     var _html = ""
+                    if(!$data.tips.length){
+                       alert("您好，閣下的遊戲賬號下的世家轉移未成功，\n請確認您的賬號或重新選擇遊戲賬號及世家！");
+                       location.reload();
+                    }
                     $.each($data.tips,function(i,n){
                         _html += "<option value="+ n.familyid+" >"+ n.familyname+"</option>"
                     });
@@ -264,7 +265,7 @@
                         if(!(n.state*1)){
                             cell1.innerHTML = "<span class='no'>未轉移&nbsp;&nbsp;&nbsp;&nbsp;<a data-id='"+ n.familyid+"' class='createGameaccount_btn' href='#' target='_self'>轉移至新賬號上</a></span>"
                         }else{
-                            cell1.innerHTML = "<span class='ed'>已轉移</span>"
+                            cell1.innerHTML = "<span class='ed'>已轉移&nbsp;&nbsp;&nbsp;&nbsp;轉移賬號為：<span id='role_"+n.familyid+"'></span></span>"
                         }
                         $(".createGameaccount_btn").unbind("click").on("click",function(){
                             _that.role_id = $(this).attr("data-id");
@@ -276,7 +277,15 @@
                             $(".createGameaccount_btn").hide().after("| 已提交后台处理");
                         }
                     });
+                    _that.game_transferlist(function($data){
 
+                        if($data.status>0){
+                            $.each($data.tips,function(i,n){
+
+                               $('#role_'+n.familyid).append(n.bindaccount);
+                            });
+                        }
+                    });
                     $(".step_input > div").hide();
                     $(".step_d").show();
                 });
@@ -308,6 +317,20 @@
                 default :
 
             }
+        },
+        game_transferlist:function($fn){
+            var _that = this;
+            $.ajax({
+                'type': 'GET',
+                'dataType': 'jsonp',
+                'data':{"esid":_that.session_url},
+                'url':this.game_url+"transferlist/",
+                'success':function($data){
+                    if($fn){
+                        $fn($data);
+                    }
+                }
+            });
         },
         game_transfer:function($params,$fn){
             var _that = this;
