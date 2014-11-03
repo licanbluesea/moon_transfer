@@ -39,6 +39,7 @@
                 _that.isthird = $data.tips.thirdparty*1;
                 _that.game_info(function($data){
                     if(!$data.tips.length){
+                        $(".step_input > div").hide();
                         $(".step_c").show();
                         return false
                     }
