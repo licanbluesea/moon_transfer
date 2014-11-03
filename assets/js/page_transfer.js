@@ -41,6 +41,7 @@
                     if(!$data.tips.length){
                         $(".step_input > div").hide();
                         $(".step_c").show();
+                        alert("該通行已经沒有可轉移的賬號！\n或登錄另一個遊戲賬號進行轉移！")
                         return false
                     }
                     $(".game_account").find("option").each(function(i,n){
