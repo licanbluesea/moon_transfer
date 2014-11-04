@@ -256,7 +256,7 @@
                    n.remove();
                 }
             });
-            if(this.isthird &&  !this.role_new){
+            if(this.isthird &&  !this.role_new && this.tpaccount){
                 _obj =  {
                     "esid":this.session_url,
                     "account":this.account_name,
