@@ -240,7 +240,7 @@
                     var _html = ""
                     if(!$data.tips.length){
                        alert("您好，閣下的遊戲賬號下的世家轉移未成功，\n請確認您的賬號或重新選擇遊戲賬號及世家！");
-                       //location.reload();
+                       location.reload();
                     }
                     $.each($data.tips,function(i,n){
                         _html += "<option value="+ n.familyid+" >"+ n.familyname+"</option>"
