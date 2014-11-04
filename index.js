@@ -49,7 +49,8 @@ function routers($params){
     var _url = $params.replace("\/","");
     switch(_url){
         case 'acclist':
-            var _obj = {"status":1,"tips":["user1","user2"]};
+            //var _obj = {"status":1,"tips":["user1","user2"]};
+            var _obj = {"status":1,"tips":[{"account":"游戏账号","tpAccount":"第三方账号"},{"account":"游戏账号","tpAccount":"第三方账号"},{"account":"游戏账号","tpAccount":"第三方账号"}]}
             return _obj;
             break;
         case 'thirdparty':
@@ -61,7 +62,7 @@ function routers($params){
             return _obj;
             break;
         case 'faclist':
-            var _obj = {"status":1, "tips":[{"familyid":123, "familyname":"世家名", "state" : 1},{"familyid":1223, "familyname":"世家名", "state" : 0}]};
+            var _obj = {"status":1, "tips":[{"familyid":123, "familyname":"世家名", "state" : 1},{"familyid":1223, "familyname":"世家名", "state" : 0},{"familyid":12234, "familyname":"世家名", "state" : 0}]};
             return _obj;
             break;
         case 'authaccount':
