@@ -26,7 +26,7 @@
       <file leaf-file-name="index.jade" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.jade">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="239" column="66" selection-start="13675" selection-end="13675" vertical-scroll-proportion="0.6752827" vertical-offset="4123" max-vertical-offset="5529">
+            <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.123176664" vertical-offset="57" max-vertical-offset="5567">
               <folding />
             </state>
           </provider>
@@ -44,7 +44,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="4771" selection-end="4771" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
+            <state line="2" column="0" selection-start="5162" selection-end="5162" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
               <folding />
             </state>
           </provider>
@@ -239,7 +239,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="true" />
     <property name="SearchEverywhereHistory" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../jx3/db20140827" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../xoyobox/xoyobox_ka" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
@@ -346,7 +346,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2615063" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2620545" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -663,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="4771" selection-end="4771" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
+        <state line="2" column="0" selection-start="5162" selection-end="5162" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="152">
           <folding />
         </state>
       </provider>
@@ -712,7 +712,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="239" column="66" selection-start="13675" selection-end="13675" vertical-scroll-proportion="0.6752827" vertical-offset="4123" max-vertical-offset="5529">
+        <state line="7" column="15" selection-start="216" selection-end="216" vertical-scroll-proportion="0.123176664" vertical-offset="57" max-vertical-offset="5567">
           <folding />
         </state>
       </provider>
